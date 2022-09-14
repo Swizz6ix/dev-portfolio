@@ -8,10 +8,11 @@ const ProjectsCard = ({ data }) => {
 	return (
 		<Col lg="6">
 			<Fade bottom duration={2000} >
-				<Card className="shadow-lg--hover shadow mt-4">
+				<Card className="shadow-lg--hover shadow mt-4" color="warning" outline data-header="skew" >
+					<img alt="sample" src="\img\icons\common\Ferdinand Charles - Google Chrome 8_28_2022 5_38_46 PM.png" width="100%" />
 					<CardBody>
 						<div className="d-flex px-3">
-							<div className="pl-4">
+							<div className="pl-1">
 								<h3>{data.name}</h3>
 								<p className="description mt-3">{data.desc}</p>
 								{data.github ? (

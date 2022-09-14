@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Card, Col, Row, Container } from "reactstrap";
-
+import { Card, Col, Row, Container, NavbarBrand, NavItem, NavLink } from "reactstrap";
+import { greetings } from "../portfolio";
 import SocialLinks from "../components/SocialLinks";
 import Image from "next/image";
 
@@ -9,30 +9,77 @@ const GithubProfileCard = ({ prof }) => {
 	return (
 		<Card className="section-lg bg-gradient-info shadow-lg border-0">
 			<Container className="">
-				<div className="p-2">
+				<div className="p-2 ">
 					<Row className="">
-						<Col className="order-lg-2" lg="4">
+						{/* <Col className="order-lg-2" lg="4">
 							<img
 								src={prof.avatar_url}
 								style={{ width: "200px" }}
 								alt=""
 								className="rounded-circle img-center img-fluid shadow shadow-lg--hover mb-4"
 							/>
-						</Col>
-						<Col lg="8" className="order-lg-1">
-							<h2 className="text-white">Reach Out to me!</h2>
+						</Col> */}
+						<Col lg="8" className="">
+							<h2 className="text-white">Send a mail now!</h2>
 							<p className="lead text-white mt-3">
-								DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY
-								INBOX IS OPEN FOR ALL
+								ferdinandcharles6@gmail.com
 							</p>
-							<p className="text-white mt-3">{prof.bio}</p>
-							<div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
+							{/* <p className="text-white mt-3">{prof.bio}</p> */}
+							{/* <div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
 								<i className="ni ni-pin-3 text-info mr-2" />
 								{prof.location}
-							</div>
+							</div> */}
 							<SocialLinks />
 						</Col>
 					</Row>
+					<Row></Row>
+					<Row>
+						<Col>
+							<ul className="d-flex flex-wrap">
+								<NavItem className="list-unstyled">
+									<NavLink rel="noopener" className="text-white nav-link-icon">
+										About
+									</NavLink>
+								</NavItem>
+								
+								<NavItem className="list-unstyled">
+									<NavLink className="text-white">
+										Resume
+									</NavLink>
+								</NavItem>
+
+								<NavItem className="list-unstyled">
+									<NavLink className="text-white">
+										Skills
+									</NavLink>
+								</NavItem>
+
+								<NavItem className="list-unstyled">
+									<NavLink className="text-white">
+										Projects
+									</NavLink>
+								</NavItem>
+
+								<NavItem className="list-unstyled">
+									<NavLink className="text-white">
+										Blog
+									</NavLink>
+								</NavItem>
+
+								<NavItem className="list-unstyled">
+									<NavLink className="text-white">
+										Contact
+									</NavLink>
+								</NavItem>
+							</ul>
+							<NavbarBrand>
+								<h2 className="text-white" id="nav-title">
+									{greetings.name}
+								</h2>
+							</NavbarBrand>
+						</Col>
+					</Row>
+					
 				</div>
 			</Container>
 		</Card>
