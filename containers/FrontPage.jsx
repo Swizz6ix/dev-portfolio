@@ -3,30 +3,18 @@ import { Col, Container, Row, Button, Modal, ModalHeader, ModalBody, ModalFooter
 import SocialLinks from '../components/SocialLinks';
 
 function FrontPage(args) {
-    const [modalShow, setModalShow] = useState(false);
+    // const [modalShow, setModalShow] = useState(false);
     useEffect(() => {
 		document.documentElement.scrollTop = 0;
 		document.scrollingElement.scrollTop = 0;
 	});
     
-    const toggle = () => setModalShow(!modalShow);
+    // const toggle = () => setModalShow(!modalShow);
   return (
     <main>
-        <div className='position-relative'>
+        <div id='home' className='position-relative'>
             <section className=' section section-lg section-shaped pb-250 bg-image' 
-            // style={{backgroundImage: "url('/img/icons/common/Screenshot_20220828-164022_Gallery.jpg')",
-            // backgroundPosition: "center center",
-            // backgroundRepeat: 'no-repeat',
-            // backgroundSize: "cover"}}
             >
-                <picture>
-                    <source srcSet="/img/icons/common/Screenshot_20220102-182336_Gallery.jpg" media='(max-width: 600px) and (orientation: portrait)'>
-                    </source>
-                        <img src='/img/icons/common/Screenshot_20220828-164022_Gallery.jpg' className='img-fluid position-absolute top-0'
-                        style={{width: '100vw'}}
-                        />
-                </picture>
-                {/* <img src='/img/icons/common/Screenshot_20220828-164022_Gallery.jpg' className='img-fluid' /> */}
                 <div className='shape shape-style-1 bg-gradient-info'>
                     <span />
                     <span />
@@ -53,7 +41,7 @@ function FrontPage(args) {
                                     <SocialLinks />
                                 </div>
                                 <div className='btn-wrapper my-4'>
-                                    <Button onClick={toggle} className=' btn-icon mb-3 mb-sm-0 ml-1' color='warning'>
+                                    <Button onClick={args.toggle} className=' btn-icon mb-3 mb-sm-0 ml-1' color='warning'>
                                         <span className='btn-inner--icon mr-1'>
                                             <i className='fa fa-phone'/>
                                         </span>
@@ -65,14 +53,14 @@ function FrontPage(args) {
                             </Col>
                         </Row>
                         <Modal
-                                    isOpen={modalShow}
+                                    isOpen={args.modalShow}
                                     onHide = {()=>setModalShow(false)}
                                     size='md'
                                     aria-labelledby='contained-modal-tilte-vcenter'
                                     centered
                                     {...args}
                                 >
-                                    <ModalHeader toggle={toggle}>
+                                    <ModalHeader toggle={args.toggle}>
                                             <h4><span><i className='fa fa-comments' aria-hidden="true"></i></span> Contact Me</h4>
                                     </ModalHeader>
                                     <ModalBody>
@@ -81,7 +69,7 @@ function FrontPage(args) {
 
                                     </ModalBody>
                                     <ModalFooter>
-                                        <Button type='button' className='btn btn-outline-info default' onClick={toggle}> Close</Button>
+                                        <Button type='button' className='btn btn-outline-info default' onClick={args.toggle}> Close</Button>
                                     </ModalFooter>
                                 </Modal>
                     </div>

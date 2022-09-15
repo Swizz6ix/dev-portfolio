@@ -7,8 +7,17 @@ import { skillsSection } from "../portfolio";
 
 const Skills = () => {
 	return skillsSection && (
-		<Container className="text-center my-5 section section-lg">
-			<h1 className="h1">{skillsSection.title}</h1>
+		<Container id="services" className=" my-5 section section-lg">
+			<div className="d-flex p-4">
+				<div>
+					<div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
+						<i className="fa fa-keyboard-o" aria-hidden = "true"></i>
+					</div>
+				</div>
+				<div className="pl-4">
+					<h4 className=" display-3 text-info">{skillsSection.title}</h4>
+				</div>
+			</div>
 			<p className="lead">{skillsSection.subTitle}</p>
 			{skillsSection.data.map((section, index) => {
 				return (

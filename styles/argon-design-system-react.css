@@ -52,6 +52,7 @@
 	--default: #172b4d;
 	--white: #fff;
 	--neutral: #fff;
+	--mineblue: #6d559eef;
 	--darker: black;
 	--breakpoint-xs: 0;
 	--breakpoint-sm: 576px;
@@ -14409,6 +14410,10 @@ button.bg-lighter:focus {
 	background: linear-gradient(35deg, #2dce89 0, #2dcecc 100%) !important;
 }
 
+.bg-gradient-mineblue {
+	background: linear-gradient(35deg, #6b4493 0, #332586 100%) !important;
+}
+
 .bg-gradient-info {
 	background: linear-gradient(35deg, #11cdef 0, #1171ef 100%) !important;
 }
@@ -22710,6 +22715,36 @@ td.rdtYear:hover {
 
 #more {
 	display: none;
+	transition: all 0.5ms ease-in-out;
+}
+
+.text-shadow {
+	text-shadow: 2px 1px 1px #5e72e4;
+}
+
+.transform {
+	transition: all 0.3ms ease-out;
+}
+.transfrom:hover {
+	transform: translateY(8px);
+}
+
+.bg-image {
+	background: url("/img/icons/common/Untitled-8.jpg");
+	background-size: cover !important;
+	background-repeat: no-repeat;
+}
+
+@media (max-width: 1199.98px) {
+	.bg-image {
+		background: url("/img/icons/common/Untitled-140.jpg");
+	}
+}
+
+@media (max-width: 768.98px) {
+	.bg-image {
+		background: url("/img/icons/common/Untitled-101.jpg");
+	}
 }
 
 /*# sourceMappingURL=argon-design-system-react.css.map */

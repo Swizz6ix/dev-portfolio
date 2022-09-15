@@ -6,7 +6,7 @@ import { Fade } from "react-reveal";
 
 const Feedbacks = () => {
 	return feedbacks && (
-		<section className="section section-lg">
+		<section id="feedback" className="section section-lg">
 			<Container>
 				<div className="d-flex p-4">
 					<div>

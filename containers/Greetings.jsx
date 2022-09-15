@@ -6,7 +6,7 @@ import TextTruncate from "react-text-truncate";
 import GreetingLottie from "../components/DisplayLottie";
 import SocialLinks from "../components/SocialLinks";
 
-const Greetings = () => {
+const Greetings = (args) => {
 	// useEffect(() => {
 	// 	document.documentElement.scrollTop = 0;
 	// 	document.scrollingElement.scrollTop = 0;
@@ -30,9 +30,9 @@ const Greetings = () => {
 	}
 	return (
 		<main>
-			<div className="position-relative">
+			<div id="about" className="position-relative">
 				<section className="section section-lg section-shaped pb-250">
-					<div className="shape shape-style-1 bg-gradient-info">
+					<div className="shape shape-style-1 bg-gradient-primary">
 						<span />
 						<span />
 						<span />
@@ -46,7 +46,7 @@ const Greetings = () => {
 					<Container className="py-lg-md d-flex">
 						<div className="col px-0">
 							<Row>
-								<Col lg="6">
+								<Col lg="6" id={args.about}>
 									<h1 className="display-3 text-white">
 										{greetings.title + " "}
 									</h1>

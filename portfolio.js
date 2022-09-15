@@ -17,16 +17,16 @@ export const contact = {email: "ferdinandcharles6@gmail.com"};
 
 export const socialLinks = {
 	facebook: "https://www.facebook.com/reactwithtechandmusic/",
-	instagram: "https://www.instagram.com/__hanzla100",
+	instagram: "https://www.instagram.com/swizz6ix",
 	twitter: "https://twitter.com/swizz6ix/status/1562548904964784128?t=fMlOuDboiHfu1Ey7a7RNoQ&s=19",
 	github: "https://github.com/Swizz6ix",
 	linkedin: "https://www.linkedin.com/in/ferdinand-charles-82901a87",
 };
 
 export const skillsSection = {
-	title: "What I do",
+	title: "Skills",
 	subTitle:
-		"CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+		"The future belongs to those who learn more skils and combine them in creative ways.",
 	data: [
 		{
 			title: "Software Developer",
@@ -53,10 +53,10 @@ export const skillsSection = {
 					skillName: "JavaScript",
 					fontAwesomeClassname: "logos:javascript",
 				},
-				// {
-				// 	skillName: "C#",
-				// 	fontAwesomeClassname: "logos:npm-icon",
-				// },
+				{
+					skillName: "dotnet",
+					fontAwesomeClassname: "logos:dotnet",
+				},
 				{
 					skillName: "Python",
 					fontAwesomeClassname: "logos:python",
@@ -83,15 +83,15 @@ export const skillsSection = {
 				},
 				{
 					skillName: "Nodejs",
-					fontAwesomeClassname: "logos:npm-icon",
+					fontAwesomeClassname: "logos:nodejs-icon",
 				},
-				// {
-				// 	skillName: "ASP.net",
-				// 	fontAwesomeClassname: "logos:npm-icon",
-				// },
+				{
+					skillName: "ASP",
+					fontAwesomeClassname: "vscode-icons:file-type-asp",
+				},
 				{
 					skillName: "Blazor",
-					fontAwesomeClassname: "logos:npm-icon",
+					fontAwesomeClassname: "simple-icons:blazor",
 				},
 				{
 					skillName: "Django",
@@ -144,7 +144,7 @@ export const skillsSection = {
 				},
 				{
 					skillName: "MongoDB",
-					fontAwesomeClassname: ""
+					fontAwesomeClassname: "logos:mongodb"
 				}
 				// {
 				// 	skillName: "Cloudinary",
@@ -203,7 +203,7 @@ export const skillsSection = {
 				// },
 				{
 					skillName: "Sanity",
-					fontAwesomeClassname: "",
+					fontAwesomeClassname: "logos:sanity",
 				}
 			],
 		},
@@ -227,25 +227,33 @@ export const SkillBars = [
 
 export const educationInfo = [
 	{
-		schoolName: "Bamboo Tech Academy",
-		subHeader: "Software Development",
-		duration: "",
+		schoolName: "ALX",
+		subHeader: "Software Engineering",
+		duration: "12 months",
 		desc: "",
-		grade: "A",
+		grade: "",
 		descBullets: [
-			"",
-			"",
+			"Ubuntu, Linux, unix programming",
+			"Data Structures and algorithms",
+			"Reverse engineering and security",
+			"Graphic Programming",
+			"Object Oriented",
+			"Databases",
+			"Front-end"
 		],
 	},
 	{
 		schoolName: "Ebonyi State University",
 		subHeader: "B.Sc Industrial Physics",
-		duration: "",
+		duration: "4 years",
 		desc: "",
 		grade: "",
 		descBullets: [
-			"",
-			"",
+			"Foundamentals of Computer Science",
+			"Basics of Programming Language",
+			"Physics",
+			"GeoPhysics",
+			"Mathematics"
 		],
 	},
 ];
@@ -287,38 +295,64 @@ export const experience = [
 
 export const projects = [
 	{
-		name: "Movie Thriller App",
-		desc: "Utilized TMDB API to allow users to dynamically discover newly released movies and watch thrillers directly from the app. Movies were sorted according to their genre such as Romance, Action, Horror, Documentary, etc. Demonstrating my strength of front-end development by implementing an amazing user experience using industry best practices. Technologies such as Firebase, MUI, axios, React.js, Context API (just to mention a few) were employed",
-		github: "https://github.com/1hanzla100/developer-portfolio",
-		link: " Hulu-69340.web.app",
-	},
-	{
-		name: "Covid19 tracker",
-		desc: "This App allows users to keep track of the covid19 virus around the world, all thanks to disease.sh for comprehesive database, which i utilized through its API. Accessing vital informatioms such as the total number of new cases, recovery, and death per day, per country. With an ample data to play around with, I built some interesting features one of which is, to circle round the selected country on the map, with green indicating country is safe, with reduced or no new cases, and red indicates new cases on a daily and as a result country is not safe. subsequently, based on the numbers returned from querying a particular country, a line graph is plotted with curves showing if the cases in a particular country are on a raise or not. It is worth noting that this App was deployed to a rural health center to help them keep track of the virus and an increased awareness of 80%. was recorded. Some of the technologies employed include Firebase, React.js, react-leaflet, react-chartjs-2, Context API (just to mention a few) were employed",
-		github: "https://github.com/1hanzla100/Django-React-Marketplace",
-	},
-	{
 		name: "Auto Mobile Website (Telsa)",
 		desc: "Fully responsive automobile website with different pages, showing different models of cars and other products such as Solar Energy products. Industrial standard automations built with best practices, reusable components, redux are some of the amazing techniques employed to see this built through",
-		github: "https://github.com/1hanzla100/django-react-forum",
+		alt: "Auto Mobile Website (Telsa)",
+		img: "/img/icons/common/Tesla.png",
+		github: "https://github.com/Swizz6ix/Auto-Mobile-Website-Telsa-",
+		link: "https://auto-mobile-website-telsa-swizz6ix.vercel.app/"
 	},
 	{
 		name: "Social Media Video App(Tiktok)",
 		desc: "Social media Video app, built on industry standard with the famous scroll snap feature, utilizing the power of firebase to store and query the database, MUI furnishing with amazing Icons to add sleekness to the app, play, pause functionality, likes and comments enabled",
-		github: "https://github.com/1hanzla100/django-react-forum",
+		alt: "Social Media Video App(Tiktok)",
+		img: "/img/icons/common/Tik-Tok.png",
+		github: "https://github.com/Swizz6ix/video-app-tik-tok-",
+		link: "https://video-app-tik-tok.vercel.app/"
+	},
+	{
+		name: "Movie Thriller App",
+		desc: "Utilized TMDB API to allow users to dynamically discover newly released movies and watch thrillers directly from the app. Movies were sorted according to their genre such as Romance, Action, Horror, Documentary, etc. Demonstrating my strength of front-end development by implementing an amazing user experience using industry best practices. Technologies such as Firebase, MUI, axios, React.js, Context API (just to mention a few) were employed",
+		img: "/img/icons/common/Movie-thriller-app.png",
+		alt: "Movie Thriller App",
+		github: "https://github.com/Swizz6ix/hulu-clone",
+		link: "https://hulu-69340.web.app",
+	},
+	{
+		name: "Covid19 tracker",
+		desc: "This App allows users to keep track of the covid19 virus around the world, all thanks to disease.sh for comprehesive database, which i utilized through its API. Accessing vital informatioms such as the total number of new cases, recovery, and death per day, per country. With an ample data to play around with, I built some interesting features one of which is, to circle round the selected country on the map, with green indicating country is safe, with reduced or no new cases, and red indicates new cases on a daily and as a result country is not safe. subsequently, based on the numbers returned from querying a particular country, a line graph is plotted with curves showing if the cases in a particular country are on a raise or not. It is worth noting that this App was deployed to a rural health center to help them keep track of the virus and an increased awareness of 80%. was recorded. Some of the technologies employed include Firebase, React.js, react-leaflet, react-chartjs-2, Context API (just to mention a few) were employed",
+		alt: "Covid19 tracker",
+		img: "/img/icons/common/Covid-19-tracker.png",
+		github: "https://github.com/Swizz6ix/covid19-tracker",
+		link: "https://covid-19-tracker-5425a.web.app/",
 	},
 	{
 		name: "e-commerce shopping app",
 		desc: "Built a responsive e-commerce app using React.js that allowed users to shop, add and remove items from the cart at will, place orders, and make payments with ease, using Amazon as a reference App study. MUI was used to enhance users' experience, giving users that comfy home feeling, utilizing the power of firebase to store and query database, providing user authentication and login functionalities. Industry best practices was employed from sleek automation to payment feature, which was built using stripe that enables customers to make payments, with their cards",
-		github: "https://github.com/1hanzla100/Django-ecommerce",
+		img: "/img/icons/common/Amazon.png",
+		alt: "e-commerce shopping app",
+		github: "https://github.com/Swizz6ix/e-commerce-app-Amazon-",
 	},
 	{
 		name: "uniswap blockchain app",
 		desc: "Built on web3 with technologies such as sanity and MetaMask, users are able to transfer and receive Ethereum in real time. Users are also able to view transaction history and get notifications in real time as transfers happen. Using industry best practices to achieve simple smart contract and excellent smooth milky looking UI with Tailwind css.",
-		github: "https://github.com/1hanzla100/Django-ecommerce",
+		img: "/img/icons/common/Uniswap-blockchain-app.png",
+		alt: "uniswap blockchain app",
+		github: "https://github.com/Swizz6ix/uniswap-blochchain-app-nextjs",
 		link: "https://uniswap-blockchain-app-nextjs-swizz6ix.vercel.app"
 	},
 ];
+
+export const blog = [
+	{
+		name: "React with Tech and Music",
+		desc: "A weekly post about how the tech industry has benefited from the music industry and vice versa, it also includes weekly lessons and road maps to becoming a developer."
+	},
+	{
+		name: "Teens, Tech and the future",
+		desc: "A weekly post out young Tech CEOs and Startups, their struggles and success. And what the future holds for young teens and generations beyond them as they continue to embrace Tech Life. Is there a place for the older generations? Find out"
+	}
+]
 
 export const feedbacks = [
 	{
@@ -340,7 +374,7 @@ export const seoData = {
 		"A passionate Full Stack Web Developer and Blockchain Developer.",
 	author: "Ferdinand Charles",
 	image: "https://avatars3.githubusercontent.com/u/59178380?v=4",
-	url: "https://developer-portfolio-1hanzla100.vercel.app",
+	url: "",
 	keywords: [
 		"Front-end",
 		"Ferdinand Charles",

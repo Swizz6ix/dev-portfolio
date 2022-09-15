@@ -1,20 +1,20 @@
-import React from "react";
-
+import React from 'react';
 import { Card, CardBody, Col, Button } from "reactstrap";
 
 import { Fade } from "react-reveal";
 
-const ProjectsCard = ({ data }) => {
-	return (
-		<Col lg="6">
+function BlogCard({data}) {
+  return (
+    <Col lg="6">
 			<Fade bottom duration={2000} >
 				<Card className="shadow-lg--hover shadow mt-4" color="warning" outline data-header="skew" >
-					<img alt={data.alt} src={data.img} width="100%" />
+					<img alt="sample" src="\img\icons\common\Ferdinand Charles - Google Chrome 8_28_2022 5_38_46 PM.png" width="100%" />
 					<CardBody>
 						<div className="d-flex px-3">
 							<div className="pl-1">
 								<h3>{data.name}</h3>
 								<p className="description mt-3">{data.desc}</p>
+                                <h2 className='text-center text-info'>Coming Soon...</h2>
 								{data.github ? (
 									<Button
 										className="btn-icon"
@@ -51,7 +51,7 @@ const ProjectsCard = ({ data }) => {
 				</Card>
 			</Fade>
 		</Col>
-	);
-};
+  )
+}
 
-export default ProjectsCard;
+export default BlogCard

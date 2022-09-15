@@ -8,11 +8,20 @@ import GreetingLottie from "../components/DisplayLottie";
 
 const Proficiency = () => {
 	return SkillBars && (
-		<Container className="section section-lg">
+		<Container id="proficiency" className="section section-lg">
 			<Fade bottom duration={2000} >
 				<Row>
 					<Col lg="6">
-						<h1 className="h1">Proficiency</h1>
+						<div className="d-flex p-4">
+							<div>
+								<div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
+									<i className="fa fa-keyboard-o" aria-hidden = "true"></i>
+								</div>
+							</div>
+							<div className="pl-4">
+								<h4 className=" display-3 text-info">Proficiency</h4>
+							</div>
+						</div>
 						{SkillBars.map((skill) => {
 							return (
 								<div

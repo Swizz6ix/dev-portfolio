@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import PropTypes from "prop-types";
 const FrontPage = dynamic(() => import("../containers/FrontPage"));
+const Blog = dynamic(() => import("../containers/Blog"));
 const Navigation = dynamic(() => import("../components/Navigation"));
 const Greetings = dynamic(() => import("../containers/Greetings"));
 const Skills = dynamic(() => import("../containers/Skills"));
@@ -14,14 +15,18 @@ const GithubProfileCard = dynamic(() =>
 );
 import { openSource } from "../portfolio";
 import SEO from "../components/SEO";
+import { useState } from "react";
+import ScrollTop from "../components/ScrollTop";
 
 
 export default function Home({ githubProfileData }) {
+	const [modalShow, setModalShow] = useState(false);
+	const toggle = () => setModalShow(!modalShow);
 	return (
 		<div>
 			<SEO />
-			<Navigation />
-			<FrontPage />
+			<Navigation toggle = {toggle} />
+			<FrontPage toggle = {toggle} modalShow = {modalShow} setModalShow = {setModalShow} />
 			<Greetings />
 			<Skills />
 			<Proficiency />
@@ -29,7 +34,9 @@ export default function Home({ githubProfileData }) {
 			<Experience />
 			<Feedbacks />
 			<Projects />
-			<GithubProfileCard prof={githubProfileData} />
+			<Blog />
+			<GithubProfileCard prof={githubProfileData} toggle = {toggle} />
+			<ScrollTop />
 		</div>
 	);
 }
