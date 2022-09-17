@@ -371,9 +371,9 @@ export const feedbacks = [
 export const seoData = {
 	title: "Ferdinand Charles",
 	description:
-		"A passionate Full Stack Web Developer and Blockchain Developer.",
+		"Software Developer",
 	author: "Ferdinand Charles",
-	image: "https://avatars3.githubusercontent.com/u/59178380?v=4",
+	image: "/img/icons/common/Untitled-14.jpg",
 	url: "",
 	keywords: [
 		"Front-end",
